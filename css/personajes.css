@@ -31,12 +31,15 @@ body{
 #conts{
     display: flex;
     flex-wrap: wrap;
-    gap: 200px;
+    justify-content: space-around;
+    gap: 10px;
     width: 100%;
 
 }
 
 #centrar{
+    width: 100%;
+    display: flex;
     justify-content: center;
 }
 
@@ -55,7 +58,6 @@ h3{
 .tendencias{
     text-align: center;
 }
-.centrar{
-    display: flex;
-    justify-content: center;
+.span{
+    color: #4d648d;
 }

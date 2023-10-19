@@ -1,12 +1,11 @@
-let contenedor=document.querySelector(".container")
-const URL_PERSO='https://api.themoviedb.org/3/person/popular?api_key=b53b30728ee622cb860092e73f1b0f1c&page=1&language=en-US'
+let contenedor=document.querySelector("#conts")
+const URL_PERSO='https://api.themoviedb.org/3/person/popular?api_key=b53b30728ee622cb860092e73f1b0f1c&page=1&language=en-CO'
 
     fetch(URL_PERSO)
     .then(resolve => resolve.json())
     .then(datos=> {
         console.log(datos)
         let personajes=datos.results
-        // console.log(peliculas)
         añadirPersonajes(personajes)
     })
     

@@ -1,19 +1,19 @@
-import { Tv } from "./tvPopulars.js"
+export function Tv(){
 
-let contenedor=document.querySelector(".containers")
-const URL_PELIS='https://api.themoviedb.org/3/trending/movie/day?api_key=b53b30728ee622cb860092e73f1b0f1c&page=1&language=es-CO'
+    const URL_PELIS2='https://api.themoviedb.org/3/tv/popular?api_key=b53b30728ee622cb860092e73f1b0f1c&page=1&language=es-CO'
 
-    fetch(URL_PELIS)
+    fetch(URL_PELIS2)
     .then(resolve => resolve.json())
     .then(datos=> {
         console.log(datos)
-        let peliculas=datos.results
-        console.log(peliculas)
-        añadirPelis(peliculas)
+        let tvShows=datos.results
+        console.log(tvShows)
+        añadirTv(tvShows)
     })
-
-function añadirPelis(peliculas){
-    peliculas.forEach(element => {
+}
+function añadirTv(tvShows){
+    let contenedor=document.querySelector(".containers2")
+    tvShows.forEach(element => {
         let div = document.createElement("div")
         div.classList.add("contents")
         let images = document.createElement("img")
@@ -26,6 +26,3 @@ function añadirPelis(peliculas){
     });
 
 }
-Tv()
-
-

@@ -16,8 +16,8 @@ body{
     background-color: var(--bg-100);
     color: var(--text-100);
 }
-.containers{
-    width: 80%;
+.containers,.containers2{
+    width: 100%;
     display: flex;
     gap: 2em;
     overflow-x: scroll;
@@ -33,11 +33,13 @@ body{
 }
 ::-webkit-scrollbar{
     background-color: #0F1C2E;
-    width: 5px;
+    width: 3px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: white;
     border-radius: 25px;
+    width: 3px;
+
 }
 .contents{
     width: 150px;
@@ -49,13 +51,15 @@ img{
 h1{
     text-align: center;
 }
+h2{
+    margin-top: 0.5em;
+    font-size: 3em;
+}
 h3{
+    margin-top: 0.2em;
     text-align: center;
+    font-size: 1em;
 }
-.tendencias{
-    text-align: center;
-}
-.centrar{
-    display: flex;
-    justify-content: center;
+.span{
+    color: #4d648d;
 }
